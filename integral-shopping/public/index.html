@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="//at.alicdn.com/t/font_1713061_bj9daudedxl.css"
+    />
+    <title>积分商城</title>
+  </head>
+  <body>
+    <script>
+      function resetFontSize() {
+        var baseFontSize = 100;
+        var designWidth = 375;
+        var width = window.innerWidth;
+        var currentFontSize = (width / designWidth) * baseFontSize;
+        document.getElementsByTagName("html")[0].style.fontSize =
+          currentFontSize + "px";
+      }
+      window.onresize = function() {
+        resetFontSize();
+      };
+      resetFontSize();
+    </script>
+    <div id="root"></div>
+  </body>
+</html>
